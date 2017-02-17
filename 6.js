@@ -10,16 +10,13 @@ const {
 
 //Expected Output:
 // Is there a chance of rain this weekend? Yes
-var result = compose (
+const Array = data.hourly_forecast
 
-//if (x.condition === 'Chance of Rain' && x.FCTTIME.weekday_name==='Saturday'||x.FCTTIME.weekday_name==='Sunday')
-//return "yes"
-//else return "no"
-//)(data.hourly_forecast)
+var result = function (x){
 
-function weatherConditionTypes(x) {
-        return x.condition
-    }
+x.condition === 'Chance of Rain' && x.FCTTIME.weekday_name==='Saturday'||x.FCTTIME.weekday_name==='Sunday'? return "yes":return "no"
+(data.hourly_forecast)
+
 
 
 console.log("Is there a chance of rain this weekend?", result)
