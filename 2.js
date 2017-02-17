@@ -17,8 +17,9 @@ const {
 
 var result = compose (
 
-filter(x=> x.condition === 'Chance Of Rain'),
-map (cleanHourlyObservation)
+//filter(x=> x.FCTTIME.weekday_name === 'Saturday' || x.FCTTIME.weekday_name === 'Sunday'),
+filter(x=> x.condition === 'Chance of Rain'),
+ map (cleanHourlyObservation)
 )(data.hourly_forecast)
 
 

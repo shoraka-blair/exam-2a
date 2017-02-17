@@ -15,7 +15,7 @@ const {
 
 var result = compose (
 
-take (100),
+take (25),
 map (cleanHourlyObservation)
 )(data.hourly_forecast)
 
